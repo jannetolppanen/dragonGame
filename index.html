@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab2049861a.js" crossorigin="anonymous"></script>
+    <title>Peli</title>
+</head>
+
+<body>
+    <div class="map">
+        <table>
+            <tr>
+                <td id="0">Vanha linnantorni</td>
+                <td id="1">Syvä kaivo</td>
+                <td id="2">Aurinkoinen metsäaukio</td>
+            </tr>
+            <tr id="trPlus">
+                <td id="3">Nukkuva lohikäärme</td>
+                <td id="4">Kapea metsäpolku</td>
+                <td id="5">Vanha portti</td>
+            </tr>
+            <tr>
+                <td id="6">Joen ranta</td>
+                <td id="7">Tyhjä puupenkki</td>
+                <td id="8">Vanha mökki</td>
+            </tr>
+        </table>
+        <br>
+
+    </div>
+    <div class="container">
+
+        <div class="container-left">
+            <img src="" alt="map">
+        </div>
+
+        <div class="container-right">
+
+            <div class="container-right-location">
+                <p id="output"></p>
+            </div>
+
+            <div class="container-right-answer">
+                <div class="info-container">
+                    <div class="instructions">
+                        <h1>Ohjeet ja ominaisuudet</h1>
+                        <h2>Läpipeluu</h2>
+                        <p>Vanhat esineet vielä olemassa. Penkiltä pitää hakea soihtu jolla voi valaista mökin. Vasta valon avulla mökiltä paljastuu miekka jonka kanssa voi surmata lohikäärmeen. Lohikäärmeen kuoleman jälkeen portin läpi pääsee kulkemaan uudelle alueella. Portti sulkeutuu perässä eikä takaisin enää pääse. Jatko-osaa odotellessa... </p>
+                        <h2>Lisäykset</h2>
+                        <ul>
+                            <li>Liikkuminen kirjottamalla tai hiirellä nuolta painamalla</li>
+                            <li>Käskyn antaminen enterillä, enter myös tyhjentää input kentän</li>
+                            <li>"Minimap" näyttää kartan sekä kulloisenkin olinpaikan</li>
+                            <li>Mökki on pimeä kunnes noudetaan soihtu ja käytetään sitä mökissä</li>
+                            <li>Mökiltä ei löydy miekkaa ilman valoa</li>
+                            <li>Lohikäärmeen kuoltua kartassa lohikäärmeen sijainnin nimi päivittyy sekä karttaan aukeaa uusi alue. Ruutuun siirtymisen jälkeen peli on ohi eikä takaisin pääse</li>
+                            <li>Lohikäärmettä ei voi "tappaa uudestaan", gameMessage vaihtuu</li>
+                            <li>Infonappula ja nuolet font awesomesta</li>
+                            <li>Käyttöliittymää muokattu</li>
+                            
+
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-circle-info info"> Ohjeet</i><br>
+                </div>
+
+                <div class="arrow_keys">
+                    <div id="empty" class="arrow empty"><i class="fa-solid fa-arrow-up"></i></div>
+                    <div id="up" class="arrow up"><i class="fa-solid fa-arrow-up"></i></div>
+                    <div id="empty" class="arrow empty"><i class="fa-solid fa-arrow-up"></i></div>
+
+                    <div id="left" class="arrow left"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div id="down" class="arrow down"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div id="right" class="arrow right"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+
+                <input type="text" id="input" class="input" placeholder="Anna komento">
+                <button id="button" class="button">Vastaa</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
